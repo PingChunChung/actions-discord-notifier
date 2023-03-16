@@ -44,7 +44,6 @@ try {
         ],
     };
 
-    // 訊息內容
     const message = {
         embeds: [embed]
     };

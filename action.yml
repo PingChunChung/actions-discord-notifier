@@ -1,4 +1,4 @@
-name: Discord Notify
+name: Actions Discord Notifier
 description: Discord Notify about Github Actions Informtion
 inputs:
   webhook:
@@ -8,11 +8,8 @@ inputs:
     description: "Job status. Should be bound to job.status. Default to success."
     required: false
     default: ${{ job.status }}
-  content:
-    description: "Content. Shown as an message outside of the embed. See [Mention to user/role](#mention-to-user-role)"
-    required: false
   title:
-    description: "String included in embed title. Overrides job input."
+    description: "String included in embed title."
     required: false
     default: ${{ github.workflow }}
 runs:
